@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 // import logo from './logo.svg';
-import './App.css';
+import './scss/App.scss';
 
 import Error from "./components/Error";
 import Home from "./components/Home";
 import About from "./components/About";
 import Episode from "./components/Episode";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 class App extends Component {
 
@@ -53,6 +54,7 @@ class App extends Component {
             <Route path="/episodes/:id" component={Episode} />
             <Route component={Error} />
           </Switch>          
+          <Footer />
         </div>
       </BrowserRouter>
     );

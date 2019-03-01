@@ -34,11 +34,26 @@ class App extends Component {
           })
         });
 
-        console.log(_this.state.items);
+        let moment = require('moment');
+        require('moment/locale/ru');
+
+        let _items = _this.state.items;
+
+        // augment episodes object
+        let episodes = _items.rss.channel[0].item.map(episode => {
+          const episodeNumber = episode.title[0].split(":")[0];
+          // add episode number key
+          episode.episodeNum = episodeNumber.replace("#",""); // add clean episode number
+          // add clean title
+          episode.title = episode.title[0].replace(episodeNumber + ": ", ""); // add clean episode title
+          // add formatted date
+          episode.pubDateConverted = moment(episode.pubDate[0]).locale('ru').format("LL"); // add neat episode date in Russian
+          return episode;
+        });
 
         this.setState({
           isLoaded: true,
-          items: _this.state.items
+          items: episodes
         });
       });
   }

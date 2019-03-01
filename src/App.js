@@ -16,7 +16,8 @@ class App extends Component {
     super(props);
     this.state = {
       items: [],
-      isLoaded: false
+      isLoaded: false,
+      latestEpisode: null
     }
   }
 
@@ -53,7 +54,8 @@ class App extends Component {
 
         this.setState({
           isLoaded: true,
-          items: episodes
+          items: episodes,
+          latestEpisodeNum: episodes.length
         });
       });
   }
@@ -66,7 +68,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact render={(props) => <Home {...props} appState={this.state} /> } />
             <Route path="/about" component={About} />
-            <Route path="/episodes/:id" component={Episode} />
+            <Route path="/episodes/:id" render={(props) => <Episode {...props} appState={this.state} /> } />
             <Route component={Error} />
           </Switch>          
           <Footer />

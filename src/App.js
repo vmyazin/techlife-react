@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Redirect } from 'react-router';
 // import logo from './logo.svg';
 import './scss/App.scss';
 
@@ -72,6 +73,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact render={(props) => <Home {...props} appState={this.state.appState}  /> } />
             <Route path="/about" component={About} />
+            <Redirect from='/episode/:id' to='/episodes/:id'/>
             <Route path="/episodes/:id" render={(props) => <Episode {...props} appState={this.state.appState} /> } />
             <Route component={Error} />
           </Switch>          

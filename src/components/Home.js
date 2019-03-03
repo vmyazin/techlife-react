@@ -39,6 +39,12 @@ export class Home extends React.Component {
 
       let episodes = items;
 
+      let episodeDetail = ''
+      if ((this.state.selectedItem) && (typeof this.state.selectedItem === 'object')) {
+        episodeDetail = (<EpisodeDetailsInline itemData={this.state.selectedItem} />);
+      }
+           
+      
       return (
         <div className="container">
           <div className="row">
@@ -46,7 +52,7 @@ export class Home extends React.Component {
 
               <h2>Наши выпуски</h2>
 
-              <EpisodeDetailsInline itemData={this.state.selectedItem} />
+              {episodeDetail}
 
               <ul className="episode-list">
                 {episodes.map(item => (

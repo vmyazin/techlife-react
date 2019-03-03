@@ -51,10 +51,13 @@ class App extends Component {
           return episode;
         });
 
-        this.setState({
+        this.setState({fuckState:
+          {
+           latestEposodeNum: 98359,
           isLoaded: true,
           items: episodes
-        });
+        }
+          });
       });
   }
 
@@ -64,9 +67,9 @@ class App extends Component {
         <div>
           <Header />
           <Switch>
-            <Route path="/" exact render={(props) => <Home {...props} appState={this.state} /> } />
+            <Route path="/" exact render={(props) => <Home {...props} appState={this.state.fuckState} /> } />
             <Route path="/about" component={About} />
-            <Route path="/episodes/:id" render={(props) => <Episode {...props} appState={this.state} /> } />
+            <Route path="/episodes/:id" render={(props) => <Episode {...props} appState={this.state.fuckState} /> } />
             <Route component={Error} />
           </Switch>          
           <Footer />

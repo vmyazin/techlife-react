@@ -4,10 +4,6 @@ import { withRouter, NavLink } from "react-router-dom";
 
 export class Header extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
 
     const path = this.props.location.pathname.slice(1);

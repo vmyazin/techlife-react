@@ -13,7 +13,7 @@ export class EpisodeDetailsInline extends React.Component {
     return (
       <div className="selected-box">
         <h3><span className="episode-num">№{item.episodeNum}</span> <a href={this.buildLinkHref()}>{item.title}</a> <span className="small-caps date">{item.pubDateConverted}</span></h3>
-        <section class="episode-desc">
+        <section className="episode-desc">
           <div dangerouslySetInnerHTML={{__html: item.description}}></div>
         </section>
         <div className="player">

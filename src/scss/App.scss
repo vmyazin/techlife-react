@@ -35,11 +35,13 @@ b {
   font-weight: 600;
 }
 
-a {
+a,
+.pseudo-link {
   color: #fff;
   border-bottom: 1px solid $light-grey;
 
   &:hover {
+    cursor: pointer;
     color: #fff;
     text-decoration: none;
   }

@@ -38,9 +38,11 @@ export class Home extends React.Component {
 
       let episodes = items;
 
-      let episodeDetail = null;
+      let episodeDetails = null;
+
+      // create 
       if ((this.state.selectedItem) && (typeof this.state.selectedItem === 'object')) {
-        episodeDetail = (<EpisodeDetailsInline itemData={this.state.selectedItem} />);
+        episodeDetails = (<EpisodeDetailsInline itemData={this.state.selectedItem} />);
       }
            
       
@@ -53,11 +55,11 @@ export class Home extends React.Component {
 
               <ul className="episode-list">
                 {episodes.map(item => (
-                  <li key="{index}" className={(this.state.selectedEpisodeNum == item.episodeNum) ? 'selected' : ''}>
+                  <li key="{index}" className={(this.state.selectedEpisodeNum === item.episodeNum) ? 'selected' : ''}>
                     <div className="num-and-title">
                       <span className='episode-num'>№{item.episodeNum}</span> <a href="javascript:void(0)" onClick={() => this.itemSelected(item.episodeNum)}>{item.title}</a>
                     </div>
-                    {(episodeDetail && this.state.selectedItem.episodeNum == item.episodeNum) ? episodeDetail : ''}                   
+                    {(episodeDetails && this.state.selectedItem.episodeNum === item.episodeNum) ? episodeDetails : ''}                   
                   </li>
                 ))}
               </ul>

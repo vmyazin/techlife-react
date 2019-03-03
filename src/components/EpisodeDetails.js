@@ -3,11 +3,12 @@ import React from "react";
 export class EpisodeDetails extends React.Component {
 
   render() {
-    console.log(this.props.itemData);
 
-    let item = this.props.itemData;
+    console.log(item);
+    let item = this.props.selectedItem || {};
 
     return (
+
       <div>
         <h3><span className="small-caps date">12 декабря 2018 г.</span></h3>
         <h2>№{item.episodeNum} {item.title}</h2>

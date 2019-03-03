@@ -1,5 +1,5 @@
 import React from "react";
-import EpisodeDetails from "./EpisodeDetailsInline";
+import EpisodeDetails from "./EpisodeDetails";
 
 export class Episode extends React.Component {
 
@@ -12,16 +12,24 @@ export class Episode extends React.Component {
   }
 
   render() {
+
     const { match } = this.props;
     const { isLoaded, items } = this.props.appState;
 
-    console.log(isLoaded);
+    var selectedItem = this.props.appState.items.find(obj => {
+      return obj.episodeNum === match.params.id;
+    });
 
     return (
-      <div className="App">
-        <p>№{match.params.id}</p>
-        <EpisodeDetails />
-      </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 m-t-2">
+              <div id="episode-details">
+                <EpisodeDetails selectedItem={selectedItem}/>
+              </div>
+            </div>
+          </div>
+        </div>
     );
   }
 }

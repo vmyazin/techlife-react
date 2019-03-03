@@ -7,7 +7,7 @@ export class EpisodeDetailsInline extends React.Component {
     // console.log(this.props.appState);
     // const { items } = this.props.appState;
 
-    let item = this.props.itemData;
+    let item = this.props.itemData || {};
 
     console.log(item.episodeNum);
     

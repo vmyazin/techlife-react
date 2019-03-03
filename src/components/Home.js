@@ -55,8 +55,8 @@ export class Home extends React.Component {
               <ul className="episode-list">
                 {episodes.map(item => (
                   <li key="{index}">
-                         <span className='episode-num'>№{item.episodeNum}</span> <a href="javascript:void(0)" onClick={() => this.itemSelected(item.episodeNum)}>{item.title}</a>
-                          {(episodeDetail && episodeDetail.episodeNum == item.episodeNum) ? episodeDetail : ''}                   
+                    <span className='episode-num'>№{item.episodeNum}</span> <a href="javascript:void(0)" onClick={() => this.itemSelected(item.episodeNum)}>{item.title}</a>
+                      {(episodeDetail && this.state.selectedItem.episodeNum == item.episodeNum) ? episodeDetail : ''}                   
                   </li>
                 ))}
               </ul>

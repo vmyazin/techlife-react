@@ -215,6 +215,10 @@ h3, h4, h5 {
     }
   }  
 
+  > h3 {
+    padding-right: 75px;
+  }
+
   h4 {
     color: #fff;
   }
@@ -222,7 +226,7 @@ h3, h4, h5 {
   .player {
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 0;
   }
 }
 

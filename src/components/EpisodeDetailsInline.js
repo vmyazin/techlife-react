@@ -1,4 +1,5 @@
 import React from "react";
+import SoundPlayer from "./SoundPlayer";
 
 export class EpisodeDetailsInline extends React.Component {
 
@@ -16,9 +17,7 @@ export class EpisodeDetailsInline extends React.Component {
         <section className="episode-desc">
           <div dangerouslySetInnerHTML={{__html: item.description}}></div>
         </section>
-        <div className="player">
-          <p id="play" className="btn-play">Play</p>
-        </div>
+        <SoundPlayer audioUrl={item.enclosure[0].$.url} />
       </div>
     )
     

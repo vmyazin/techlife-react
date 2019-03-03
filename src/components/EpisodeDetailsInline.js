@@ -7,21 +7,19 @@ export class EpisodeDetailsInline extends React.Component {
     // console.log(this.props.appState);
     // const { items } = this.props.appState;
 
-    let item = this.props.itemData;
-    console.log(this.props);
+    let item = this.props.itemData || {};
+
+    console.log(item);
     
     return (
-      <div>
-        <h3><span className="small-caps date">12 декабря 2018 г.</span></h3>
-        <h2>№{item.episodeNum} {item.title}</h2>
-        <p className="m-b-2"><a href="#"><span className="mask-link-style"><img src="/images/icon-download.svg" alt="Download" /> </span>Скачать</a></p>
+      <div className="selected-box">
+        <h3><span className="episode-num">№{item.episodeNum}</span> <a href="./{item.episodeNum}" data-navigo>{item.title}</a> <span className="small-caps date">{item.pubDateConverted}</span></h3>
+        <section class="episode-desc">
+          <div dangerouslySetInnerHTML={{__html: item.description}}></div>
+        </section>
         <div className="player">
           <p id="play" className="btn-play">Play</p>
         </div>
-
-        <section className="episode-desc">
-          <div dangerouslySetInnerHTML={{__html: item.description}}></div>
-        </section>
       </div>
     )
     

@@ -7,18 +7,23 @@ export class Home extends React.Component {
     super(props);
     this.state = {
       showComponent: false,
-      activeEpisode: 29
+      latestEpisodeNum: null,
+      selectedEpisodeNum: null,
+      selectedItem: null
     };
   }
 
-  
   itemSelected (itemObject) {
-    this.setState({
-      showComponent: true,
-      activeEpisode: itemObject
+    // get item with the given episode number
+    var selectedItem = this.props.appState.items.find(obj => {
+      return obj.episodeNum === itemObject;
     });
 
-    console.log('aaa', this.state.activeEpisode);
+    this.setState({
+      showComponent: true,
+      selectedEpisodeNum: itemObject,
+      selectedItem: selectedItem
+    });
   }
 
   render() {
@@ -26,12 +31,19 @@ export class Home extends React.Component {
     const { isLoaded, items } = this.props.appState;
   
     if (!isLoaded) {
+
       return <div>Loading...</div>
 
     } else {
 
       let episodes = items;
 
+      let episodeDetail = null;
+      if ((this.state.selectedItem) && (typeof this.state.selectedItem === 'object')) {
+        episodeDetail = (<EpisodeDetailsInline itemData={this.state.selectedItem} />);
+      }
+           
+      
       return (
         <div className="container">
           <div className="row">
@@ -39,11 +51,13 @@ export class Home extends React.Component {
 
               <h2>Наши выпуски</h2>
 
-              <EpisodeDetailsInline itemData={this.state.activeEpisode} />
-
               <ul className="episode-list">
                 {episodes.map(item => (
-                  <li key="{index}"><span className='episode-num'>№{item.episodeNum}</span> <a href="javascript:void(0)" onClick={() => this.itemSelected(item)}>{item.title}</a>
+                  <li key="{index}" className={(this.state.selectedEpisodeNum == item.episodeNum) ? 'selected' : ''}>
+                    <div className="num-and-title">
+                      <span className='episode-num'>№{item.episodeNum}</span> <a href="javascript:void(0)" onClick={() => this.itemSelected(item.episodeNum)}>{item.title}</a>
+                    </div>
+                    {(episodeDetail && this.state.selectedItem.episodeNum == item.episodeNum) ? episodeDetail : ''}                   
                   </li>
                 ))}
               </ul>

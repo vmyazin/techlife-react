@@ -15,9 +15,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [],
-      isLoaded: false,
-      latestEpisode: null
+      appState: {
+        items: [],
+        isLoaded: false,
+        latestEpisodeNum: null
+      }
     }
   }
 
@@ -32,7 +34,7 @@ class App extends Component {
         parseXML(data, function (err, result) {
           _this.setState({
             items: result
-          })
+          });
         });
 
         let moment = require('moment');
@@ -44,7 +46,7 @@ class App extends Component {
         let episodes = _items.rss.channel[0].item.map(episode => {
           const episodeNumber = episode.title[0].split(":")[0];
           // add episode number key
-          episode.episodeNum = episodeNumber.replace("#",""); // add clean episode number
+          episode.episodeNum = episodeNumber.replace("#",""); // add clean episode number to object
           // add clean title
           episode.title = episode.title[0].replace(episodeNumber + ": ", ""); // add clean episode title
           // add formatted date
@@ -53,9 +55,11 @@ class App extends Component {
         });
 
         this.setState({
-          isLoaded: true,
-          items: episodes,
-          latestEpisodeNum: episodes.length
+          appState: {
+            isLoaded: true,
+            items: episodes,
+            latestEpisodeNum: episodes.length            
+          }
         });
       });
   }
@@ -66,9 +70,9 @@ class App extends Component {
         <div>
           <Header />
           <Switch>
-            <Route path="/" exact render={(props) => <Home {...props} appState={this.state} /> } />
+            <Route path="/" exact render={(props) => <Home {...props} appState={this.state.appState}  /> } />
             <Route path="/about" component={About} />
-            <Route path="/episodes/:id" render={(props) => <Episode {...props} appState={this.state} /> } />
+            <Route path="/episodes/:id" render={(props) => <Episode {...props} appState={this.state.appState} /> } />
             <Route component={Error} />
           </Switch>          
           <Footer />

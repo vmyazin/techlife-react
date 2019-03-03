@@ -8,7 +8,8 @@ export class EpisodeDetailsInline extends React.Component {
     // const { items } = this.props.appState;
 
     let item = this.props.itemData;
-    console.log(this.props);
+
+    console.log(item.episodeNum);
     
     return (
       <div>

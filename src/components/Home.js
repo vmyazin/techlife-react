@@ -22,9 +22,10 @@ export class Home extends React.Component {
     this.setState({
       showComponent: true,
       selectedEpisodeNum: itemObject,
-      latestEpisodeNum: this.props.appState.items.length,
       selectedItem: selectedItem
     });
+
+    console.log(this.props.appState.latestEpisodeNum);
   }
 
   render() {

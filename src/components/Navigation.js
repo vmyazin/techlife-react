@@ -4,8 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <div className="App">
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About Us</NavLink>
+      <NavLink to="/about">О нас</NavLink>
     </div>
   );
 }

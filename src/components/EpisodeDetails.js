@@ -4,7 +4,6 @@ export class EpisodeDetails extends React.Component {
 
   render() {
 
-    console.log(item);
     let item = this.props.selectedItem || {};
 
     return (

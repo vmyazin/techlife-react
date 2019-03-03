@@ -147,6 +147,10 @@ h3, h4, h5 {
       margin-left: -25px;
       margin-right: -25px;
       margin-bottom: $font-s2;
+
+      .num-and-title {
+        display: none;
+      }
     }
 
     img {

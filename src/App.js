@@ -16,8 +16,7 @@ class App extends Component {
     super(props);
     this.state = {
       items: [],
-      isLoaded: false,
-      latestEpisode: null
+      isLoaded: false
     }
   }
 
@@ -32,7 +31,7 @@ class App extends Component {
         parseXML(data, function (err, result) {
           _this.setState({
             items: result
-          })
+          });
         });
 
         let moment = require('moment');
@@ -44,7 +43,7 @@ class App extends Component {
         let episodes = _items.rss.channel[0].item.map(episode => {
           const episodeNumber = episode.title[0].split(":")[0];
           // add episode number key
-          episode.episodeNum = episodeNumber.replace("#",""); // add clean episode number
+          episode.episodeNum = episodeNumber.replace("#",""); // add clean episode number to object
           // add clean title
           episode.title = episode.title[0].replace(episodeNumber + ": ", ""); // add clean episode title
           // add formatted date
@@ -54,8 +53,7 @@ class App extends Component {
 
         this.setState({
           isLoaded: true,
-          items: episodes,
-          latestEpisodeNum: episodes.length
+          items: episodes
         });
       });
   }

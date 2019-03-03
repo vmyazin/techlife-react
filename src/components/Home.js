@@ -7,18 +7,24 @@ export class Home extends React.Component {
     super(props);
     this.state = {
       showComponent: false,
-      activeEpisode: 29
+      latestEpisodeNum: null,
+      selectedEpisodeNum: null,
+      selectedItem: null
     };
   }
 
-  
   itemSelected (itemObject) {
-    this.setState({
-      showComponent: true,
-      activeEpisode: itemObject
+    // get item with the given episode number
+    var selectedItem = this.props.appState.items.find(obj => {
+      return obj.episodeNum === itemObject;
     });
 
-    console.log('aaa', this.state.activeEpisode);
+    this.setState({
+      showComponent: true,
+      selectedEpisodeNum: itemObject,
+      latestEpisodeNum: this.props.appState.items.length,
+      selectedItem: selectedItem
+    });
   }
 
   render() {
@@ -26,6 +32,7 @@ export class Home extends React.Component {
     const { isLoaded, items } = this.props.appState;
   
     if (!isLoaded) {
+
       return <div>Loading...</div>
 
     } else {
@@ -39,11 +46,11 @@ export class Home extends React.Component {
 
               <h2>Наши выпуски</h2>
 
-              <EpisodeDetailsInline itemData={this.state.activeEpisode} />
+              <EpisodeDetailsInline itemData={this.state.selectedItem} />
 
               <ul className="episode-list">
                 {episodes.map(item => (
-                  <li key="{index}"><span className='episode-num'>№{item.episodeNum}</span> <a href="javascript:void(0)" onClick={() => this.itemSelected(item)}>{item.title}</a>
+                  <li key="{index}"><span className='episode-num'>№{item.episodeNum}</span> <a href="javascript:void(0)" onClick={() => this.itemSelected(item.episodeNum)}>{item.title}</a>
                   </li>
                 ))}
               </ul>

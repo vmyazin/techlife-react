@@ -9,9 +9,9 @@ export class EpisodeDetails extends React.Component {
     return (
 
       <div>
-        <h3><span className="small-caps date">12 декабря 2018 г.</span></h3>
+        <h3><span className="small-caps date">{item.pubDateConverted}</span></h3>
         <h2>№{item.episodeNum} {item.title}</h2>
-        <p className="m-b-2"><a href="#"><span className="mask-link-style"><img src="/images/icon-download.svg" alt="Download" /> </span>Скачать</a></p>
+        <p className="m-b-2"><a href={item.enclosure[0].$.url}><span className="mask-link-style"><img src="/images/icon-download.svg" alt="Download" /> </span>Скачать</a></p>
         <div className="player">
           <p id="play" className="btn-play">Play</p>
         </div>

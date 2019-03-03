@@ -3,7 +3,6 @@ import EpisodeDetails from "./EpisodeDetails";
 
 export class Episode extends React.Component {
 
-
   constructor(props) {
     super(props);
     this.state = {
@@ -14,23 +13,28 @@ export class Episode extends React.Component {
   render() {
 
     const { match } = this.props;
-    const { isLoaded, items } = this.props.appState;
+    const { isLoaded } = this.props.appState;
 
     var selectedItem = this.props.appState.items.find(obj => {
       return obj.episodeNum === match.params.id;
     });
 
-    return (
+    if (!isLoaded) {
+
+      return <div>Loading...</div>
+
+    } else {
+
+      return (
         <div className="container">
           <div className="row">
             <div className="col-sm-12 m-t-2">
-              <div id="episode-details">
-                <EpisodeDetails selectedItem={selectedItem}/>
-              </div>
+              <EpisodeDetails selectedItem={selectedItem}/>
             </div>
           </div>
         </div>
-    );
+      )
+    }
   }
 }
 

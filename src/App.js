@@ -15,8 +15,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [],
-      isLoaded: false
+      appState: {
+        items: [],
+        isLoaded: false,
+        latestEpisodeNum: null
+      }
     }
   }
 
@@ -52,8 +55,11 @@ class App extends Component {
         });
 
         this.setState({
-          isLoaded: true,
-          items: episodes
+          appState: {
+            isLoaded: true,
+            items: episodes,
+            latestEpisodeNum: episodes.length            
+          }
         });
       });
   }
@@ -64,9 +70,9 @@ class App extends Component {
         <div>
           <Header />
           <Switch>
-            <Route path="/" exact render={(props) => <Home {...props} appState={this.state} /> } />
+            <Route path="/" exact render={(props) => <Home {...props} appState={this.state.appState}  /> } />
             <Route path="/about" component={About} />
-            <Route path="/episodes/:id" render={(props) => <Episode {...props} appState={this.state} /> } />
+            <Route path="/episodes/:id" render={(props) => <Episode {...props} appState={this.state.appState} /> } />
             <Route component={Error} />
           </Switch>          
           <Footer />

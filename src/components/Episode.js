@@ -1,5 +1,6 @@
 import React from "react";
 import EpisodeDetails from "./EpisodeDetails";
+import EpisodeNav from "./EpisodeNav";
 
 export class Episode extends React.Component {
 
@@ -36,7 +37,8 @@ export class Episode extends React.Component {
         <div id="episode-details" className="container">
           <div className="row">
             <div className="col-sm-12 m-t-2">
-              <EpisodeDetails selectedItem={selectedItem}/>
+              <EpisodeDetails selectedItem={selectedItem} />
+              <EpisodeNav selectedEpisodeNum={selectedItem.episodeNum} />
             </div>
           </div>
         </div>

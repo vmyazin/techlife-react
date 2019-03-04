@@ -12,8 +12,8 @@ export class EpisodeDetails extends React.Component {
       <div>
         <h3><span className="small-caps date">{item.pubDateConverted}</span></h3>
         <h2>№{item.episodeNum} {item.title}</h2>
-        <p className="m-b-2"><a href={item.enclosure[0].$.url}><span className="mask-link-style"><img src="/images/icon-download.svg" alt="Download" /> </span>Скачать</a></p>
         <SoundPlayer audioUrl={item.enclosure[0].$.url} />
+        <p className="m-b-2"><a href={item.enclosure[0].$.url} download={item.enclosure[0].$.url}><span className="mask-link-style"><img src="/images/icon-download.svg" alt="Download" /> </span>Скачать MP3 файл</a></p>
 
         <section className="episode-desc">
           <div dangerouslySetInnerHTML={{__html: item.description}}></div>

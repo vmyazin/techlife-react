@@ -87,13 +87,16 @@ h2 {
 h3 {
   font-size: $font-s2;
   font-weight: 600;
-}
 
-h3 .small-caps {
-  font-size: 26px;
-  font-weight: 300;
-  padding-left: 10px;
-  text-transform: uppercase;
+  .small-caps {
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  * + .small-caps {
+    padding-left: 10px;
+  }
 }
 
 h4 {
@@ -103,6 +106,10 @@ h4 {
 
 h3, h4, h5 {
   color: #aaa;
+}
+
+h3 + h2 {
+  margin-top: 1vw;
 }
 
 // font sizes XS

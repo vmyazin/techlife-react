@@ -2,8 +2,12 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="App">
-      <p>О нас</p>
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-12 m-t-2">
+          <p>О нас</p>
+        </div>
+      </div>
     </div>
   );
 }

@@ -36,13 +36,28 @@ export class Home extends React.Component {
 
     } else {
 
-      let episodes = items;
+      const episodes = items;
 
       let episodeDetails = null;
-
+      
+      
+      
+      // In case the episode are loaded and no selected item it selected,
+      // We choose the last episode -- episodes[episodes.length - 1];
+      // You can change it to first -- episodes[0];
+      let selectedItem;
+      if (episodes && episodes.length > 0) {
+        if(!this.state.selectedItem) {
+          // Here is where we choose (line below)
+          selectedItem = episodes[episodes.length - 1];
+        } else {
+          selectedItem = this.state.selectedItem;
+        } 
+      }
+      
       // create episode instance
-      if ((this.state.selectedItem) && (typeof this.state.selectedItem === 'object')) {
-        episodeDetails = (<EpisodeDetailsInline itemData={this.state.selectedItem} />);
+      if ((selectedItem) && (typeof selectedItem === 'object')) {
+        episodeDetails = (<EpisodeDetailsInline itemData={selectedItem} />);
       }
            
       return (
@@ -58,7 +73,7 @@ export class Home extends React.Component {
                     <div className="num-and-title">
                       <span className="episode-num">№{item.episodeNum}</span> <span className="pseudo-link" onClick={() => this.itemSelected(item.episodeNum)}>{item.title}</span>
                     </div>
-                    {(episodeDetails && this.state.selectedItem.episodeNum === item.episodeNum) ? episodeDetails : ''}                   
+                    {(episodeDetails && selectedItem.episodeNum === item.episodeNum) ? episodeDetails : ''}                   
                   </li>
                 ))}
               </ul>

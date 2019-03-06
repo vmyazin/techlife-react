@@ -18,8 +18,7 @@ class App extends Component {
     this.state = {
       appState: {
         items: [],
-        isLoaded: false,
-        latestEpisodeNum: null
+        isLoaded: false
       }
     }
   }
@@ -58,8 +57,7 @@ class App extends Component {
         this.setState({
           appState: {
             isLoaded: true,
-            items: episodes,
-            latestEpisodeNum: episodes.length            
+            items: episodes
           }
         });
       });

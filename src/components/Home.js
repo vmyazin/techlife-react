@@ -7,7 +7,6 @@ export class Home extends React.Component {
     super(props);
     this.state = {
       showComponent: false,
-      latestEpisodeNum: null,
       selectedEpisodeNum: null,
       selectedItem: null
     };
@@ -28,7 +27,7 @@ export class Home extends React.Component {
 
   render() {
 
-    const { isLoaded, items, latestEpisodeNum } = this.props.appState;
+    const { isLoaded, items } = this.props.appState;
 
     if (!isLoaded) {
 

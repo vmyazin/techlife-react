@@ -10,6 +10,7 @@ export class EpisodeDetails extends React.Component {
     return (
 
       <div>
+        <p>&lt; <a href="/">на главную</a></p>
         <h3><span className="small-caps date">{item.pubDateConverted}</span></h3>
         <h2>№{item.episodeNum} {item.title}</h2>
         <SoundPlayer audioUrl={item.enclosure[0].$.url} />

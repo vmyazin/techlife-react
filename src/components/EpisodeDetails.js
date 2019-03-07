@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter, NavLink } from "react-router-dom";
 import SoundPlayer from "./SoundPlayer";
 
 export class EpisodeDetails extends React.Component {
@@ -10,7 +11,7 @@ export class EpisodeDetails extends React.Component {
     return (
 
       <div>
-        <p>&lt; <NavLink to="/">На главную</NavLink></p>
+        <p>&lt; <NavLink to="/">на главную</NavLink></p>
         <h3><span className="small-caps date">{item.pubDateConverted}</span></h3>
         <h2>№{item.episodeNum} {item.title}</h2>
         <h4>{item['itunes:subtitle']}</h4>

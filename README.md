@@ -29,6 +29,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### Manually Deploying Via FTP
+
+Navigate to the `build` folder, open the FTP client and proceed to the app folder on the server. Remove all previously uploaded build files from the server folder and copy the contents of the local `build` fodler onto the server. The updated app is now deplyed.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

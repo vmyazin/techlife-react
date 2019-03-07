@@ -34,8 +34,8 @@ export class Header extends React.Component {
               </div>
 
               <div className="col-lg-3 col-md-12">
-                <p>Слушать прямо тут.<br/>
-                  Найти в <b><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">iTunes</a></b> и <b><a href="https://overcast.fm/itunes1013700516">Оvercast</a></b>.</p>
+                <p>Слушать можно тут.<br/>
+                  Найти нас в <b><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">iTunes</a></b> и <b><a href="https://overcast.fm/itunes1013700516">Оvercast</a></b>.</p>
               </div>
             </div>
           </div>

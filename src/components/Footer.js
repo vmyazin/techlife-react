@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="container footer">
       <div className="row">
         <div className="col-lg-12">
-          <p className="text-center">Techlife Syndicate. Copyright &copy; 2015-{moment().year()}</p>
+          <p className="text-center">Techlife Syndicate. Copyright &copy; 2015-{moment().year()}. <a href="/podcast-feed.xml">RSS</a></p>
         </div>
       </div>
     </div>

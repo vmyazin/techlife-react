@@ -6,7 +6,8 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-sm-12 m-t-2">
-            <h2>О нас</h2>
+            <p>&lt; <a href="/">на главную</a></p>
+            <h2>О нас</h2><br />
           </div>
         </div>
 

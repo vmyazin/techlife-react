@@ -71,7 +71,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact render={(props) => <Home {...props} appState={this.state.appState}  /> } />
             <Route path="/about" component={About} />
-            <Redirect from='/episodes' to='/'/>
+            <Redirect exact from="/episodes" to='/'/>
             <Redirect from='/episode/:id' to='/episodes/:id'/>
             <Route path="/episodes/:id" render={(props) => <Episode {...props} appState={this.state.appState} /> } />
             <Route component={Error} />

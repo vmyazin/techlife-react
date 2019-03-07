@@ -3,11 +3,11 @@ import { withRouter, NavLink } from "react-router-dom";
 
 const About = () => {
   return (
-    <section>
+    <section className="textual">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 m-t-2">
-            <p>&lt; <NavLink to="/">На главную</NavLink></p>
+            <p>&lt; <NavLink to="/">на главную</NavLink></p>
             <h2>О нас</h2><br />
           </div>
         </div>

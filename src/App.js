@@ -25,7 +25,8 @@ class App extends Component {
 
   componentDidMount() {
     let _this = this;
-    fetch("http://v1.techlifepodcast.com/archive-feed.xml")
+    // fetch("http://v1.techlifepodcast.com/archive-feed.xml") 
+    fetch("http://staging.techlifepodcast.com/archive-feed.xml")
       .then(res => res.text())
       .then(data => {
 

@@ -13,6 +13,7 @@ export class EpisodeDetails extends React.Component {
         <p>&lt; <a href="/">на главную</a></p>
         <h3><span className="small-caps date">{item.pubDateConverted}</span></h3>
         <h2>№{item.episodeNum} {item.title}</h2>
+        <h4>{item['itunes:subtitle']}</h4>
         <SoundPlayer audioUrl={item.enclosure[0].$.url} />
         <p className="m-b-2"><a href={item.enclosure[0].$.url} download={item.enclosure[0].$.url}><span className="mask-link-style"><img src="/images/icon-download.svg" alt="Download" /> </span>Скачать MP3 файл</a></p>
 

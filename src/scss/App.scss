@@ -213,22 +213,9 @@ h3 + h2 {
     left: -87px;
   }
   
-  p {
-    line-height: 1.35;
-    color: $mid-grey;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }  
-
-  > h3 {
+  > h3, h4 {
     padding-right: 75px;
     margin-bottom: 1.5rem;
-  }
-
-  h4 {
-    color: #fff;
   }
 
   .player {
@@ -246,6 +233,15 @@ h3 + h2 {
   > p {
     width: calc(100% - 100px);
   }
+
+  p {
+    line-height: 1.35;
+    color: $mid-grey;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }  
 
   ul {
     margin-bottom: 15px;

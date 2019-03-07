@@ -30,8 +30,7 @@ export class Header extends React.Component {
               </div>
 
               <div className="col-lg-5 col-md-6">
-                <p><b>Ведущие:</b><br/> Дмитрий Здоров и Василий Мязин.</p>
-                <Navigation />
+                <p><b>Ведущие:</b><br/> <NavLink to="/about">Дмитрий Здоров и Василий Мязин.</NavLink></p>
               </div>
 
               <div className="col-lg-3 col-md-12">
@@ -42,6 +41,7 @@ export class Header extends React.Component {
           </div>
         </div>
       );
+      
     } else {
 
       return (
@@ -63,7 +63,7 @@ export class Header extends React.Component {
               </div>
 
               <div className="col-lg-5 col-md-6">
-                <p><b>Ведущие:</b><br /> Дмитрий Здоров и Василий Мязин.</p>
+                <p><b>Ведущие:</b><br/> <NavLink to="/about">Дмитрий Здоров и Василий Мязин.</NavLink></p>
               </div>
 
               <div className="col-lg-3 col-md-12">

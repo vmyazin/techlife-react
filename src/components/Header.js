@@ -19,7 +19,7 @@ export class Header extends React.Component {
               <div className="col-lg-4 col-md-6">
                 <div className="spacer-xs spacer-sm"></div>
                 <div className="spacer-xs spacer-sm"></div>
-                <p>Интернет радио-программа (нынче называют <b>подкаст</b>) про современные технологии, их влияние на нашу жизнь, и прочие мысли.</p>
+                <p>Интернет радио-программа (или <b>подкаст</b>) про современные технологии, их влияние на нашу жизнь, и прочие мысли.</p>
                 <div className="spacer-md"></div>
                 <div className="spacer-lg"></div>
                 <div className="spacer-lg"></div>
@@ -53,12 +53,11 @@ export class Header extends React.Component {
               <div className="col-lg-4 col-md-6">
                 <div className="spacer-xs spacer-sm"></div>
                 <div className="spacer-xs spacer-sm"></div>
-                <p>Интернет радио-программа (нынче называют <b>подкаст</b>) про современные технологии, их влияние на нашу жизнь, и прочие мысли.</p>
+                <p>Интернет радио-программа (или <b>подкаст</b>) про современные технологии, их влияние на нашу жизнь, и прочие мысли.</p>
                 <p>
                   <a className="link-ext" href="https://t.me/techlifepodcast" rel="external">&nbsp;t.me/techlifepodcast&nbsp;</a><br />
                   <a className="link-ext" href="mailto:talk@techlifepodcast.com" rel="external">&nbsp;talk@techlifepodcast.com&nbsp;</a>
                 </p>
-                <div className="spacer-md"></div>
                 <div className="spacer-lg"></div>
               </div>
 
@@ -67,8 +66,8 @@ export class Header extends React.Component {
               </div>
 
               <div className="col-lg-3 col-md-12">
-                <p>Слушать прямо тут.<br />
-                  Найти в <b><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">iTunes</a></b> и <b><a href="https://overcast.fm/itunes1013700516">Оvercast</a></b>.</p>
+                <p>Найти в <b><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">iTunes</a></b> и <b><a href="https://overcast.fm/itunes1013700516">Оvercast</a></b>.</p>
+                <div className="spacer-md"></div>
               </div>
             </div>
           </div>

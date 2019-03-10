@@ -10,7 +10,7 @@ body {
   font-weight: 400;
 }
 
-@media (max-width: 479px) {
+@media (max-width: $min-scr-width) {
   body {
     background-position: calc(100% - 0px) top;
     background-size: 130%;
@@ -19,6 +19,10 @@ body {
 
 .hide {
   display: none;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 p {
@@ -66,6 +70,7 @@ h1 {
   font-size: 10vw;
   font-weight: 900;
   letter-spacing: 0.15vw;
+  text-align: center;
   margin: 0;
   white-space: nowrap;
 }
@@ -89,7 +94,7 @@ h3 {
   font-weight: 600;
 
   .small-caps {
-    font-size: 26px;
+    font-size: 80%;
     font-weight: 300;
     text-transform: uppercase;
   }
@@ -113,9 +118,13 @@ h3 + h2 {
 }
 
 // font sizes XS
-@media (max-width: 479px) {
+@media (min-width: $min-scr-width) and (max-width: $scr-width-sm) {
   p {
     font-size: $font-s4;
+  }
+
+  h1 {
+    font-size: 9.5vw;
   }
 
   h2 {
@@ -126,8 +135,20 @@ h3 + h2 {
     font-size: $font-s3;
 
     .small-caps {
-      font-size: 22px;
+      font-size: 66%;
     }
+  }
+
+  h4 {
+    font-size: $font-s4;  
+    font-weight: 600;
+  }
+}
+
+// font sizes SM
+@media (min-width: $scr-width-xs) and (max-width: $scr-width-sm) {
+  h2 {
+    font-size: $font-s3;
   }
 }
 
@@ -200,7 +221,7 @@ h3 + h2 {
 }
 
 // font sizes XS
-@media (max-width: 479px) {
+@media (min-width: $min-scr-width) and (max-width: $scr-width-sm) {
   .episode-list {
     font-size: $font-s4;
   }
@@ -249,13 +270,19 @@ h3 + h2 {
 }
 
 
-@media (max-width: 479px) {
+@media (min-width: $min-scr-width) and (max-width: $scr-width-sm) {
+  .episode-desc {
+    font-size: $font-s4;
+  }
+}
+
+@media (max-width: $min-scr-width) {
   .spacer-xs {
     height: 25vw;
   }
 }
 
-@media (min-width: 479px) and (max-width: 768px) {
+@media (min-width: $min-scr-width) and (max-width: 768px) {
   .spacer-sm {
     height: 20vw;
   }
@@ -263,7 +290,7 @@ h3 + h2 {
 
 @media (min-width: 769px) and (max-width: 992px) {
   .spacer-md {
-    height: 25vw;
+    height: 20vw;
   }
 }
 

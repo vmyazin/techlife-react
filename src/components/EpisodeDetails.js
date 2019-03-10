@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import SoundPlayer from "./SoundPlayer";
 
 export class EpisodeDetails extends React.Component {

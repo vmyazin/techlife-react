@@ -67,18 +67,12 @@ a.link-ext {
 
 h1 {
   color: #fff;
-  font-size: 10vw;
+  font-size: 9.8vw;
   font-weight: 900;
   letter-spacing: 0.15vw;
   text-align: center;
   margin: 0;
   white-space: nowrap;
-}
-
-@media screen and (min-width: $max-scr-width) {
-  h1 {
-    font-size: 9.2vw;
-  }
 }
 
 h2 {
@@ -118,13 +112,20 @@ h3 + h2 {
 }
 
 // font sizes XS
+
+@media screen and (min-width: $max-scr-width) {
+  h1 {
+    font-size: 9.2vw;
+  }
+}
+
 @media (min-width: $min-scr-width) and (max-width: $scr-width-sm) {
   p {
     font-size: $font-s4;
   }
 
   h1 {
-    font-size: 9.5vw;
+    font-size: 9.4vw;
   }
 
   h2 {

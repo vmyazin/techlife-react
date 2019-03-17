@@ -38,7 +38,7 @@ export class Episode extends React.Component {
           <div className="row">
             <div className="col-sm-12 m-t-2">
               <EpisodeDetails selectedItem={selectedItem} />
-              <EpisodeNav selectedEpisodeNum={selectedItem.episodeNum} />
+              <EpisodeNav selectedEpisodeNum={selectedItem.episodeNum} episodes={this.props.appState.items} />
             </div>
           </div>
         </div>

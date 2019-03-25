@@ -1,9 +1,13 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import { NavLink } from "react-router-dom";
 
 const About = () => {
   return (
     <section className="textual">
+      <Helmet>
+        <title>Технологии и жизнь: о нас</title>
+      </Helmet>
       <div className="container">
         <div className="row">
           <div className="col-sm-12 m-t-2">

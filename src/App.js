@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Redirect } from 'react-router';
+import { Helmet } from 'react-helmet';
 // import logo from './logo.svg';
 import './scss/App.scss';
 
@@ -70,6 +71,11 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
+          <Helmet>
+            <title>Технологии и жизнь: подкаст</title>
+            <meta name="description" content="Интернет радио-программа про современные технологии, их влияние на нашу жизнь, и прочие мысли." />
+          </Helmet>
+
           <Header />
           <Switch>
             <Route path="/" exact render={(props) => <Home {...props} appState={this.state.appState}  /> } />

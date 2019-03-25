@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import EpisodeDetails from "./EpisodeDetails";
 
 export class Episode extends React.Component {
@@ -34,6 +35,13 @@ export class Episode extends React.Component {
 
       return (
         <div id="episode-details" className="container">
+          <Helmet>
+            <title>Технологии и жизнь №{selectedItem.episodeNum}: {selectedItem.title}</title>
+            <meta name="description" content={selectedItem['itunes:subtitle']} />
+            <meta property="og:title" content={"Технологии и жизнь №" + selectedItem.episodeNum + ": " + selectedItem.title} />
+            <meta property="og:description" content={selectedItem['itunes:subtitle']} />
+            <meta property="og:image" content="/images/techlife-artwork-1200-2019.png" />
+          </Helmet>
           <div className="row">
             <div className="col-sm-12 m-t-2">
               <EpisodeDetails selectedItem={selectedItem}/>

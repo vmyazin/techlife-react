@@ -1,5 +1,4 @@
 import React from "react";
-import Navigation from "./Navigation";
 import { withRouter, NavLink } from "react-router-dom";
 
 export class Header extends React.Component {

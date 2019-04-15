@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
 import EpisodeDetails from "./EpisodeDetails";
+import EpisodeNav from "./EpisodeNav";
 
 export class Episode extends React.Component {
 
@@ -22,16 +23,38 @@ export class Episode extends React.Component {
 
     const { match } = this.props;
     const { isLoaded } = this.props.appState;
+    const items = this.props.appState.items;
 
-    var selectedItem = this.props.appState.items.find(obj => {
-      return obj.episodeNum === match.params.id;
-    });
+    let prevItem, nextItem;
 
     if (!isLoaded) {
 
       return <div>Loading...</div>
 
     } else {
+
+
+      let selectedItem = items.find(obj => {
+        return obj.episodeNum === match.params.id;
+      });
+
+      if (selectedItem.episodeNum != 1) {
+        prevItem = items.find(obj => {
+          return obj.episodeNum == parseInt(match.params.id) - 1;
+        });
+      } else {
+        prevItem = {};
+      }
+
+      if (selectedItem.episodeNum != items.length) {
+        nextItem = items.find(obj => {
+          return obj.episodeNum == parseInt(match.params.id) + 1;
+        })
+      } else {
+        nextItem = {};
+      }
+
+      console.log(nextItem);
 
       return (
         <div id="episode-details" className="container">
@@ -45,6 +68,7 @@ export class Episode extends React.Component {
           <div className="row">
             <div className="col-sm-12 m-t-2">
               <EpisodeDetails selectedItem={selectedItem}/>
+              <EpisodeNav selectedEpisodeNum={selectedItem.episodeNum} prevEpisodeItem={prevItem} nextEpisodeItem={nextItem} />
             </div>
           </div>
         </div>

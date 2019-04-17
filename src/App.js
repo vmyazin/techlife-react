@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Redirect } from 'react-router';
 import { Helmet } from 'react-helmet';
 // import logo from './logo.svg';
+import './scss/bootstrap-ext.scss';
 import './scss/App.scss';
 
 import Error from "./components/Error";

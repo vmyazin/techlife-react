@@ -15,13 +15,21 @@ export class EpisodeNav extends React.Component {
   render() {
 
     return (
-      <div className="container">
-        <div className="row m-t-2">
-          <div className="col-sm-4">
-            <NavLink to={this.generateEpisodeLink(-1)}>{this.props.prevEpisodeItem.title}</NavLink>
+      <div className="episode-nav">
+        <div className="row m-t-3">
+          <div className="col-6 col-md-4">
+            <NavLink to={this.generateEpisodeLink(-1)}>
+              <img class="arrow prev" src="/images/big-thin-angle.svg"/>
+              <b>№{this.props.prevEpisodeItem.episodeNum}</b><br/>
+              {this.props.prevEpisodeItem.title}
+            </NavLink> 
           </div>
-          <div className="col-sm-4 offset-sm-2">
-            <NavLink to={this.generateEpisodeLink(+1)}>{this.props.nextEpisodeItem.title}</NavLink>
+          <div className="col-6 offset-md-4 col-md-4">
+            <NavLink to={this.generateEpisodeLink(+1)}>
+              <b>№{this.props.nextEpisodeItem.episodeNum}</b><br/>
+              {this.props.nextEpisodeItem.title}
+              <img class="arrow next" src="/images/big-thin-angle.svg"/>
+            </NavLink>
           </div>
         </div>
       </div>

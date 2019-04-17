@@ -3,13 +3,20 @@ import { NavLink } from "react-router-dom";
 
 export class EpisodeNav extends React.Component {
 
-  generateEpisodeLink(dir) {
-    let episodeToGoTo = parseFloat(this.props.selectedEpisodeNum);
+  generateEpisodeLink(direction) {
+    // parseFloat makes variables into number type
+    let episodeToGoTo = parseFloat(this.props.selectedEpisodeNum),
+        totalEpisodes = parseFloat(this.props.total);
 
-    dir = parseFloat(dir);
-    episodeToGoTo += dir;
+    direction = parseFloat(direction);
+    episodeToGoTo += direction;
 
-    return '' + episodeToGoTo;
+    if (episodeToGoTo > 0 && totalEpisodes >= episodeToGoTo) {
+      return '' + episodeToGoTo;      
+    } else {
+      // this class will hide the nav section
+      return 'd-none';      
+    }
   }
 
   render() {
@@ -18,17 +25,17 @@ export class EpisodeNav extends React.Component {
       <div className="episode-nav">
         <div className="row m-t-3">
           <div className="col-6 col-md-4">
-            <NavLink to={this.generateEpisodeLink(-1)}>
-              <img class="arrow prev" src="/images/big-thin-angle.svg"/>
+            <NavLink to={this.generateEpisodeLink(-1)} className={this.generateEpisodeLink(-1)}>
+              <img className="arrow prev" src="/images/big-thin-angle.svg"/>
               <b>№{this.props.prevEpisodeItem.episodeNum}</b><br/>
               {this.props.prevEpisodeItem.title}
             </NavLink> 
           </div>
           <div className="col-6 offset-md-4 col-md-4">
-            <NavLink to={this.generateEpisodeLink(+1)}>
+            <NavLink to={this.generateEpisodeLink(+1)} className={this.generateEpisodeLink(+1)}>
               <b>№{this.props.nextEpisodeItem.episodeNum}</b><br/>
               {this.props.nextEpisodeItem.title}
-              <img class="arrow next" src="/images/big-thin-angle.svg"/>
+              <img className="arrow next" src="/images/big-thin-angle.svg"/>
             </NavLink>
           </div>
         </div>

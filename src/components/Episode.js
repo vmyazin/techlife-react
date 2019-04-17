@@ -33,7 +33,6 @@ export class Episode extends React.Component {
 
     } else {
 
-
       let selectedItem = items.find(obj => {
         return obj.episodeNum === match.params.id;
       });
@@ -54,8 +53,6 @@ export class Episode extends React.Component {
         nextItem = {};
       }
 
-      console.log(nextItem);
-
       return (
         <div id="episode-details" className="container">
           <Helmet>
@@ -68,7 +65,7 @@ export class Episode extends React.Component {
           <div className="row">
             <div className="col-sm-12 m-t-2">
               <EpisodeDetails selectedItem={selectedItem}/>
-              <EpisodeNav selectedEpisodeNum={selectedItem.episodeNum} prevEpisodeItem={prevItem} nextEpisodeItem={nextItem} />
+              <EpisodeNav selectedEpisodeNum={selectedItem.episodeNum} total={items.length} prevEpisodeItem={prevItem} nextEpisodeItem={nextItem} />
             </div>
           </div>
         </div>

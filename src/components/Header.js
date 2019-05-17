@@ -1,5 +1,4 @@
 import React from "react";
-import Navigation from "./Navigation";
 import { withRouter, NavLink } from "react-router-dom";
 
 export class Header extends React.Component {
@@ -9,7 +8,7 @@ export class Header extends React.Component {
     const path = this.props.location.pathname.slice(1);
 
     if (path === '') {
-      // reutrn only root path
+      // return only root path
       return (
 
         <div className="master-container">

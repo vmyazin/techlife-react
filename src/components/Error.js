@@ -5,7 +5,8 @@ const Error = () => {
     <div className="container">
       <div className="row">
         <div className="col-sm-12 m-t-2">
-          <p class="text-xs-center">Тут нет такого. :(</p>
+          <h3 class="huge">404</h3>
+          <p class="text-xs-center">Тут нет такой страницы. :(</p>
         </div>
       </div>
     </div>

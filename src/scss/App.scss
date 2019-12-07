@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   font-family: 'Fira Sans', 'Helvetica Nueu', Arial, sans-serif;
   font-weight: 400;
+  color: #fff;
 }
 
 @media (max-width: $min-scr-width) {
@@ -408,4 +409,10 @@ h3 + h2 {
       opacity: .8;
     }
   }
+}
+
+// 404
+.huge {
+  font-size: 260px;
+  line-height: 1;
 }

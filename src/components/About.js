@@ -36,6 +36,12 @@ const About = () => {
           </div>
         </div>
 
+        <div className="row">
+          <div className="col-12 mt-5 text-center">
+            <img src="/images/QR-Code.svg" alt="QR Code"/>
+          </div>
+        </div>
+
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouter, NavLink } from "react-router-dom";
+import SubscribeLinks from "./SubscribeLinks";
 
 export class Header extends React.Component {
 
@@ -28,13 +29,12 @@ export class Header extends React.Component {
                 </p>
               </div>
 
-              <div className="col-lg-5 col-md-6">
+              <div className="col-lg-4 col-md-6">
                 <p><b>Ведущие:</b><br/> <NavLink to="/about">Дмитрий Здоров и Василий Мязин.</NavLink></p>
               </div>
 
-              <div className="col-lg-3 col-md-12">
-                <p>Слушать можно тут.<br/>
-                  Найти в <b><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">iTunes</a></b> и <b><a href="https://overcast.fm/itunes1013700516">Оvercast</a></b>.</p>
+              <div className="col-lg-4 col-md-12">
+                <SubscribeLinks />
               </div>
             </div>
           </div>
@@ -60,13 +60,12 @@ export class Header extends React.Component {
                 <div className="spacer-lg"></div>
               </div>
 
-              <div className="col-lg-5 col-md-6">
+              <div className="col-lg-4 col-md-6">
                 <p><b>Ведущие:</b><br/> <NavLink to="/about">Дмитрий Здоров и Василий Мязин.</NavLink></p>
               </div>
 
-              <div className="col-lg-3 col-md-12">
-                <p>Найти в <b><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">iTunes</a></b> и <b><a href="https://overcast.fm/itunes1013700516">Оvercast</a></b>.</p>
-                <div className="spacer-md"></div>
+              <div className="col-lg-4 col-md-12">
+                <SubscribeLinks />
               </div>
             </div>
           </div>

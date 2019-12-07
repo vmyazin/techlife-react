@@ -416,3 +416,52 @@ h3 + h2 {
   font-size: 260px;
   line-height: 1;
 }
+
+// Subscribe Links
+
+.sub-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+
+  li {
+    margin-bottom: 1.2rem;
+    font-size: $font-s4;
+
+    a {
+      border-bottom-width: 0;
+
+      img {
+        margin-right: 8px;
+      }
+
+      span {
+        border-bottom: 1px solid $light-grey;
+      }
+    }
+  }
+}
+
+@media (max-width: $scr-width-sm) {
+  .sub-list {
+    li {
+      font-size: $font-s5;
+    }
+  }
+}
+
+@media screen and (min-width: $scr-width-sm) and (max-width: 991px) {
+  .sub-list {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: $scr-width-lg) {
+  .sub-list {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+}

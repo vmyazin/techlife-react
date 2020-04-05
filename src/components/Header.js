@@ -47,7 +47,7 @@ export class Header extends React.Component {
 
         <div className="master-container">
           <div className="container-fluid">
-            <h1><NavLink to="/" className="reset-link-style">Технологии и жизнь</NavLink></h1>
+            <h1><NavLink to="/" className="reset-link-style"><img src="/images/tehnologii-head.svg" alt="Технологии и жизнь" /></NavLink></h1>
             <div className="row">
               <div className="col-lg-4 col-md-6">
                 <div className="spacer-xs spacer-sm"></div>

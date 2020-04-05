@@ -37,17 +37,17 @@ export class Episode extends React.Component {
         return obj.episodeNum === match.params.id;
       });
 
-      if (selectedItem.episodeNum != 1) {
+      if (selectedItem.episodeNum !== 1) {
         prevItem = items.find(obj => {
-          return obj.episodeNum == parseInt(match.params.id) - 1;
+          return obj.episodeNum === parseInt(match.params.id) - 1;
         });
       } else {
         prevItem = {};
       }
 
-      if (selectedItem.episodeNum != items.length) {
+      if (selectedItem.episodeNum !== items.length) {
         nextItem = items.find(obj => {
-          return obj.episodeNum == parseInt(match.params.id) + 1;
+          return obj.episodeNum === parseInt(match.params.id) + 1;
         })
       } else {
         nextItem = {};

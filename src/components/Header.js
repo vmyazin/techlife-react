@@ -14,7 +14,7 @@ export class Header extends React.Component {
 
         <div className="master-container">
           <div className="container-fluid">
-            <h1>Технологии и жизнь</h1>
+            <h1><img src="/images/tehnologii-head.svg" alt="Технологии и жизнь" /></h1>
             <div className="row">
               <div className="col-lg-4 col-md-6">
                 <div className="spacer-xs spacer-sm"></div>

@@ -26,11 +26,22 @@ class App extends Component {
   }
 
   componentDidMount() {
+    const fetch = require("node-fetch");
+    
     let _this = this;
-    fetch("https://www.techlifepodcast.com/archive-feed.xml") 
-    //fetch("http://v1.techlifepodcast.com/archive-feed.xml") 
-    //fetch("http://staging.techlifepodcast.com/archive-feed.xml")
-    //fetch("http://localhost:1981/archive-feed.xml")
+    let feedXml;
+
+    // staging: "http://staging.techlifepodcast.com/archive-feed.xml"
+
+    const LOCAL_DOMAINS = ["localhost", "127.0.0.1"];
+
+    if (LOCAL_DOMAINS.includes(window.location.hostname)) {
+      feedXml = "http://localhost:1981/podcast-feed.xml";
+    } else {
+      feedXml = "https://www.techlifepodcast.com/archive-feed.xml";
+    }
+
+    fetch(feedXml) 
       .then(res => res.text())
       .then(data => {
 

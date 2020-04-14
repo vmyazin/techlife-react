@@ -34,7 +34,7 @@ class SoundPlayer extends React.Component {
         btnClass: "is-playing"
       })
     }
-    console.log(this.state.playStatus);
+    console.info(this.state.playStatus);
    }
 
    togglePlayClass() {

@@ -26,7 +26,7 @@ export class EpisodeNav extends React.Component {
         <div className="row m-t-3">
           <div className="col-6 col-md-4">
             <NavLink to={this.generateEpisodeLink(-1)} className={this.generateEpisodeLink(-1)}>
-              <img className="arrow prev" src="/images/big-thin-angle.svg"/>
+              <img className="arrow prev" src="/images/big-thin-angle.svg" alt="Go to previous"/>
               <b>№{this.props.prevEpisodeItem.episodeNum}</b><br/>
               {this.props.prevEpisodeItem.title}
             </NavLink> 
@@ -35,7 +35,7 @@ export class EpisodeNav extends React.Component {
             <NavLink to={this.generateEpisodeLink(+1)} className={this.generateEpisodeLink(+1)}>
               <b>№{this.props.nextEpisodeItem.episodeNum}</b><br/>
               {this.props.nextEpisodeItem.title}
-              <img className="arrow next" src="/images/big-thin-angle.svg"/>
+              <img className="arrow next" src="/images/big-thin-angle.svg" alt="Go to next"/>
             </NavLink>
           </div>
         </div>

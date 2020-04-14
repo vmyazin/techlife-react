@@ -11,7 +11,7 @@
       "src": "images/techlife-artwork-192-2019.jpg",
       "type": "image/jpeg",
       "sizes": "192x192"
-    },
+    }
   ],
   "start_url": ".",
   "display": "standalone",

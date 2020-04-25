@@ -38,7 +38,7 @@ class App extends Component {
     if (LOCAL_DOMAINS.includes(window.location.hostname)) {
       feedXml = "http://localhost:1981/podcast-feed.xml";
     } else {
-      feedXml = "https://www.techlifepodcast.com/archive-feed.xml";
+      feedXml = "https://www.techlifepodcast.com/podcast-feed.xml";
     }
 
     fetch(feedXml) 

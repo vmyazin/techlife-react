@@ -8,9 +8,6 @@
 # testing
 /coverage
 
-# data
-public/podcast-feed.xml
-
 # production
 /build
 

@@ -29,6 +29,21 @@
     <!-- начало эпизодов -->
 				
 	<item>
+	    <title>#45: Виртуальности</title>
+	    <itunes:subtitle>Замена реального в наши дни</itunes:subtitle>
+	    <description>
+          <![CDATA[<p><b>Ссылки к эпизоду:</b></p><ul class="bulleted"><li><a href="https://shirt-pocket.com/SuperDuper/SuperDuperDescription.html">SuperDuper</a></li><li><a href="https://jumpdesktop.com/">Jump Desktop</a></li><li><a href="https://www.remotemouse.net/">emoteMousePro</a></li><li><a href="https://www.kinopoisk.ru/film/1143242/">Фильм “Джентельмены” (2019)</a></li><li><a href="https://www.kinopoisk.ru/series/574688/">Телесериал Homeland (“Родина”) (2011 – 2020)</a></li><li><a href="https://www.youtube.com/watch?v=1tyrxFfQT5k">Русские Грузины Парфенова</a></li><li><a href="https://www.patternbrands.com/">Cтудия patternbrands.com</a></li><li><a href="https://www.kinopoisk.ru/film/1190387/">Фильм “Extraction” (2020)</a></li><li><a href="https://www.kinopoisk.ru/film/1162604/">Фильм “Спутник” (2020)</a></li></ul><p><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">наш подкаст в директории подкастов Эппл</a>,<br><a href="https://overcast.fm/itunes1013700516">в Оверкасте</a>,<br> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly90ZWNobGlmZXBvZGNhc3QuY29tL3BvZGNhc3QtZmVlZC54bWw">Гугл подкастах</a>, <br><a href="https://open.spotify.com/show/03re4PmocsgPtLBtIxVK4m">Спотифае</a> и <a href="https://music.yandex.ru/album/7322142">на Яндекс Музыке</a></p>]]>
+        </description>
+	    <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/815961712-techlifepodcast-techlife-45-virtualnosti.mp3" length="31954446"/>
+	    <guid>8f067fac-ed0b-4f3a-bd42-68c998726375</guid>
+	    <itunes:duration>0:33:16</itunes:duration>
+	    <itunes:explicit>clean</itunes:explicit>
+	    <pubDate>Fri, 08 May 2020 00:05:00 EST</pubDate>
+    </item>
+
+    <!-- разделитель эпизодов -->
+				
+	<item>
 	    <title>#44: Творчество как лесной пожар</title>
 	    <itunes:subtitle>Что и как можно делать по-новому</itunes:subtitle>
 	    <description>
@@ -161,7 +176,9 @@
 	    <pubDate>Wed, 26 Jun 2019 00:05:00 EST</pubDate>
     </item>
 
-    <!-- разделитель эпизодов -->
+    <!-- далее список архивных эпизодов -->
+	
+	<!-- разделитель эпизодов -->
 	
 	<item>
 	    <title>#35: Apple слышит</title>
@@ -169,14 +186,14 @@
 	    <description>
           <![CDATA[<p><b>Заметки к эпизоду:</b></p><ul class="bulleted"><li><a href="https://marco.org/2019/06/09/apple-is-listening">Марко Армент: Apple слышит</a></li><li>Новый Мак Про, новый 6К монитор</li><li>Что мы хотим от МакБук Про</li><li><a href="https://amzn.to/2ERkDKa">MagSafe псевдо-замена</a></li><li><a href="https://developer.apple.com/xcode/swiftui/">SwiftUI и Catalist</a></li><li><a href="https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/">SF Symbols</a></li><li><a href="https://anyfont.app/">Anyfont</a></li></ul><p><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">наш подкаст в директории подкастов Эппл</a>,<br><a href="https://overcast.fm/itunes1013700516">в Оверкасте</a>,<br> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly90ZWNobGlmZXBvZGNhc3QuY29tL3BvZGNhc3QtZmVlZC54bWw">Гугл подкастах</a> и <a href="https://music.yandex.ru/album/7322142">на Яндекс Музыке</a></p>]]>
         </description>
-	    <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/639028584-techlifepodcast-episode-35-apple-slyshit.mp3" length="30320141"/>
+	    <enclosure type="audio/mpeg" url="https://www.techlifepodcast.com/Episodes/Techlife-35-Apple-slyshit.mp3" length="30320141"/>
 	    <guid>34c62f8f-fde4-4f58-8f7b-e24ecdec8c7d</guid>
 	    <itunes:duration>0:31:24</itunes:duration>
 	    <itunes:explicit>clean</itunes:explicit>
 	    <pubDate>Wed, 19 Jun 2019 00:05:00 EST</pubDate>
     </item>
 
-    <!-- разделитель эпизодов -->
+	<!-- разделитель эпизодов -->
 	
 	<item>
 	    <title>#34: Цифровая безопасность</title>
@@ -184,14 +201,12 @@
 	    <description>
           <![CDATA[<p><b>Заметки к эпизоду:</b></p><ul class="bulleted"><li>Правило 1: пароли должны быть непростыми, а также надо иметь их несколько</li><li>Правило 2: Резервные копии</li><li>Привило 3: Не делать очевидных, наивных глупостей. Быть на чеку</li><li>Программы для хранения паролей <a href="https://1password.com/">1Password</a>, <a href="https://www.lastpass.com/">LassPass</a>, <a href="https://www.keepassx.org/">Keepass</a></li><li>Другие шаги для безопасности: шифровка диска, не отправлять пароли в открытом виде, не давать доступ к почте</li></ul><p><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">наш подкаст в директории подкастов Эппл</a>,<br><a href="https://overcast.fm/itunes1013700516">в Оверкасте</a>,<br> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly90ZWNobGlmZXBvZGNhc3QuY29tL3BvZGNhc3QtZmVlZC54bWw">Гугл подкастах</a> и <a href="https://music.yandex.ru/album/7322142">на Яндекс Музыке</a></p>]]>
         </description>
-	    <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/622038753-techlifepodcast-episode-34-tsifrovaya-bezopasnost.mp3" length="26293530"/>
+	    <enclosure type="audio/mpeg" url="https://www.techlifepodcast.com/Episodes/Techlife-34-Cifrovaya-bezopasnost.mp3" length="26293530"/>
 	    <guid>ee1277a3-07ae-45cf-a6e6-2079cf044df2</guid>
 	    <itunes:duration>0:27:12</itunes:duration>
 	    <itunes:explicit>clean</itunes:explicit>
 	    <pubDate>Fri, 17 May 2019 00:05:00 EST</pubDate>
     </item>
-		
-	<!-- далее список архивных эпизодов -->
 	
     <!-- разделитель эпизодов -->
 	   

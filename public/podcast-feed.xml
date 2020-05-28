@@ -26,7 +26,22 @@
     <itunes:explicit>no</itunes:explicit>
     
 
-  <!-- начало эпизодов -->
+    <!-- начало эпизодов -->
+				
+    <item>
+      <title>#47: JRE</title>
+      <itunes:subtitle>Джо Роган подкаст уходит из свободного интернета в Спотифай</itunes:subtitle>
+      <description>
+        <![CDATA[<p><b>Ссылки к эпизоду:</b></p><img src="https://www.techlifepodcast.com/images/techlifepodcast-ep47-joerogan.jpg" width="531" height="267"><ul class="bulleted"><li><a href="https://dtf.ru/life/137347-podkast-dzho-rogana-stanet-eksklyuzivom-spotify-k-koncu-2020-goda">Объявление Joe Rogan</a> и <a href="https://www.youtube.com/watch?v=X8bVqI2j8o4">он сам об этом</a></li><li>Почему подкасты стали популярны сейчас а не когда появились</li><li>Идея свободного интернета</li><p>Дружеские советы Василия:</p><li><a href="https://www.youtube.com/channel/UC1QrUyRmSoUTPVSbHv7arcA">Канал Виктории Бородиной</a></li><li><a href="https://www.youtube.com/watch?v=sBtuqpNZwio">Naval with Kapil Gupta</a></li><li><a href="https://www.youtube.com/watch?v=RVFciKFGDgo">APE feat. LOCO HOT, Marina Maximilan: Nadlan</a></li><p>Дружеские советы Дмитрия:</p><li><a href="http://maximilyahov.ru/blog/">Блог Максима Ильяхова</a></li><li><a href="https://www.youtube.com/watch?v=hU_BGBgSTI8">Matt Wigton - Eliminator</a></li></ul><p><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">наш подкаст в директории подкастов Эппл</a>,<br><a href="https://overcast.fm/itunes1013700516">в Оверкасте</a>,<br> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly90ZWNobGlmZXBvZGNhc3QuY29tL3BvZGNhc3QtZmVlZC54bWw">Гугл подкастах</a>, <br><a href="https://open.spotify.com/show/03re4PmocsgPtLBtIxVK4m">Спотифае</a> и <a href="https://music.yandex.ru/album/7322142">на Яндекс Музыке</a></p>]]>
+      </description>
+      <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/829586047-techlifepodcast-episode-47-jre.mp3" length="44358895"/>
+      <guid>129cf1f2-1e27-40f5-9b33-597887ab4a6f</guid>
+      <itunes:duration>0:46:10</itunes:duration>
+      <itunes:explicit>clean</itunes:explicit>
+      <pubDate>Thu, 28 May 2020 00:05:00 EST</pubDate>
+    </item>
+
+    <!-- разделитель эпизодов -->
 				
     <item>
       <title>#46: Вечностности</title>

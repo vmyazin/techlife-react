@@ -29,6 +29,21 @@
     <!-- начало эпизодов -->
 				
     <item>
+      <title>#48: Протесты</title>
+      <itunes:subtitle>Рассуждаем о волне протестов в США и других местах</itunes:subtitle>
+      <description>
+        <![CDATA[<p><b>Ссылки к эпизоду:</b></p><img src="https://www.techlifepodcast.com/images/techlifepodcast-ep48-protests.jpg" width="600" height="280"><ul class="bulleted"><li>- что послужило поводом, в чём причины, наблюдения о происходящем, что бы мы (Вася и Дима) хотели бы как решение</li><li><a href="https://www.tsowell.com">Томас Соул</a> <a href="https://youtu.be/5Ivf9jrXGAY?t=1452">про типы дискриминации</a></li><li><a href="https://youtu.be/znMCGKdaV2I">Велопрогулка во время разгрома центра Филадельфии</a></li><li><a href="https://twitter.com/JackPosobiec/status/1270152199553900544">Где в мире проходят протесты в июне 2020-го</a></li><p>Дружеские советы Василия:</p><li><a href="https://www.bangkokpodcast.com">Подкаст bangkokpodcast.com</a></li><p>Дружеские советы Дмитрия:</p><li><a href="https://www.youtube.com/watch?v=V4QavApK6Zs">Максим Кац про реформы Гайдара</a></li><li><a href="https://samharris.org/podcasts/200-creatures-habit/">Sam Harris пригласил на свой подкаст James Clear расскзать о важности привычек</a></li></ul><p><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">наш подкаст в директории подкастов Эппл</a>,<br><a href="https://overcast.fm/itunes1013700516">в Оверкасте</a>,<br> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly90ZWNobGlmZXBvZGNhc3QuY29tL3BvZGNhc3QtZmVlZC54bWw">Гугл подкастах</a>, <br><a href="https://open.spotify.com/show/03re4PmocsgPtLBtIxVK4m">Спотифае</a> и <a href="https://music.yandex.ru/album/7322142">на Яндекс Музыке</a></p>]]>
+      </description>
+      <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/829586047-techlifepodcast-episode-47-jre.mp3" length="44358895"/>
+      <guid>c5b57e9f-9b33-4f38-81c2-6fb212e61ef1</guid>
+      <itunes:duration>0:46:10</itunes:duration>
+      <itunes:explicit>clean</itunes:explicit>
+      <pubDate>Thu, 28 May 2020 00:05:00 EST</pubDate>
+    </item>
+
+    <!-- разделитель эпизодов -->
+				
+    <item>
       <title>#47: JRE</title>
       <itunes:subtitle>Джо Роган подкаст уходит из свободного интернета в Спотифай</itunes:subtitle>
       <description>

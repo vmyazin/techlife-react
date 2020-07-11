@@ -29,6 +29,21 @@
     <!-- начало эпизодов -->
 				
     <item>
+      <title>#49: Нейросети приватности</title>
+      <itunes:subtitle>Как улучшить процесс настроек сервера? Нейросети в дизайне угроза дизайнерам</itunes:subtitle>
+      <description>
+        <![CDATA[<p><b>Заметки к эпизоду:</b></p><img src="https://www.techlifepodcast.com/images/techlifepodcast-ep49-nironov.jpg" width="600" height="315"><ul class="bulleted"><li>обсудили серверные технологии NGINX, IIS</li><li>почему дизайнерам до сих пор надо кодировать</li><li><a href="https://www.artlebedev.ru/ironov/">Николай Иронов</a></li><li>WWDC 2020: Apple собирает частную информацию и предоставляет пользователям гарантии безопасности</li></ul><p><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">наш подкаст в директории подкастов Эппл</a>,<br><a href="https://overcast.fm/itunes1013700516">в Оверкасте</a>,<br> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly90ZWNobGlmZXBvZGNhc3QuY29tL3BvZGNhc3QtZmVlZC54bWw">Гугл подкастах</a>, <br><a href="https://open.spotify.com/show/03re4PmocsgPtLBtIxVK4m">Спотифае</a> и <a href="https://music.yandex.ru/album/7322142">на Яндекс Музыке</a></p>]]>
+      </description>
+      <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/855999571-techlifepodcast-episode-49-neiroseti-privatnosti.mp3" length="45293024"/>
+      <guid>d0609a1b-9e92-41d2-9090-deba1a2cd8fd</guid>
+      <itunes:duration>0:47:10</itunes:duration>
+      <itunes:explicit>clean</itunes:explicit>
+      <pubDate>Fri, 10 Jul 2020 00:05:00 EST</pubDate>
+    </item>
+
+    <!-- разделитель эпизодов -->
+				
+    <item>
       <title>#48: Протесты</title>
       <itunes:subtitle>Рассуждаем о волне протестов в США и других местах</itunes:subtitle>
       <description>
@@ -161,6 +176,8 @@
 	    <pubDate>Sun, 5 Jan 2020 00:05:00 EST</pubDate>
     </item>
 
+    <!-- далее список архивных эпизодов -->
+    
     <!-- разделитель эпизодов -->
 		
 	  <item>
@@ -169,15 +186,13 @@
 	    <description>
         <![CDATA[<p><b>Заметки к эпизоду:</b></p><img src="https://www.techlifepodcast.com/images/techlifepodcast-ep39-types-of-recycling.png" width="531" height="125"><ul class="bulleted"><li>В Великобритании и США очень много пластикового мусора, который создаётся, а перерабатывается всего-то чуть-чуть</li><li>Самая вкусная вода в Сан-Франциско</li><li>Цена и качество мусора</li><li>Консумеризм и перепотребление</li><li>Правильные практические привычки</li><li>Выгода от ресайклинга</li></ul><p><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">наш подкаст в директории подкастов Эппл</a>,<br><a href="https://overcast.fm/itunes1013700516">в Оверкасте</a>,<br> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly90ZWNobGlmZXBvZGNhc3QuY29tL3BvZGNhc3QtZmVlZC54bWw">Гугл подкастах</a>, <br><a href="https://open.spotify.com/show/03re4PmocsgPtLBtIxVK4m">Спотифае</a> и <a href="https://music.yandex.ru/album/7322142">на Яндекс Музыке</a></p>]]>
       </description>
-	    <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/707661043-techlifepodcast-techlife-39-recycling.mp3" length="31060655"/>
+	    <enclosure type="audio/mpeg" url="https://www.techlifepodcast.com/Episodes/Techlife-39-Recycling.mp3" length="31060655"/>
 	    <guid>4123c7db-5121-4bd6-a67e-27ac2a9698d3</guid>
 	    <itunes:duration>0:32:16</itunes:duration>
 	    <itunes:explicit>clean</itunes:explicit>
 	    <pubDate>Mon, 4 Nov 2019 00:05:00 EST</pubDate>
     </item>
 
-    <!-- далее список архивных эпизодов -->
-    
     <!-- разделитель эпизодов -->
 	
   	<item>

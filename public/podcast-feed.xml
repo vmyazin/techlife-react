@@ -29,6 +29,21 @@
     <!-- начало эпизодов -->
 				
     <item>
+      <title>#51: Провода и как уйти от Эппл</title>
+      <itunes:subtitle>Обсудили зарядные устройства, цветные провода, причины отказаться от айфона в пользу андроида, а может даже перестать пользоваться маком</itunes:subtitle>
+      <description>
+        <![CDATA[<p><b>Заметки к эпизоду:</b></p><p><img src="https://www.techlifepodcast.com/images/techlifepodcast-ep51-hyppr.jpg" width="640" height="480"></p><ul class="bulleted"><li><a href="https://www.amazon.com/Charger-Hyppr-Macbook-Foldable-Compatible/dp/B087B6YJYJ">Зарядка Hyppr 100W USB-C</a></li><li><a href="http://digitrode.ru/articles/1132-chto-takoe-tehnologiya-gan-dlya-sozdaniya-silovyh-komponentov.html">Технология GaN</a></li><li><a href="https://www.dream-cables.com/shop/custom-cables/custom-usb-cables/">Цветные провода</a></li><li><a href="https://www.mi.com/ru/redmi-9/">Xiaomi Redmi 9</a></li></ul><p><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">наш подкаст в директории подкастов Эппл</a>,<br><a href="https://overcast.fm/itunes1013700516">в Оверкасте</a>,<br> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly90ZWNobGlmZXBvZGNhc3QuY29tL3BvZGNhc3QtZmVlZC54bWw">Гугл подкастах</a>, <br><a href="https://open.spotify.com/show/03re4PmocsgPtLBtIxVK4m">Спотифае</a> и <a href="https://music.yandex.ru/album/7322142">на Яндекс Музыке</a></p>]]>
+      </description>
+      <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/880890112-techlifepodcast-episode-51-provoda.mp3" length="42496399"/>
+      <guid>ac73ebba-82a8-49ae-a6e0-1a0df1bab75a</guid>
+      <itunes:duration>0:44:15</itunes:duration>
+      <itunes:explicit>clean</itunes:explicit>
+      <pubDate>Sun, 23 Aug 2020 00:05:00 EST</pubDate>
+    </item>
+
+    <!-- разделитель эпизодов -->
+				
+    <item>
       <title>#50: Кино</title>
       <itunes:subtitle>Важнейшее из искусств</itunes:subtitle>
       <description>
@@ -146,6 +161,8 @@
 	    <pubDate>Mon, 13 Apr 2020 00:05:00 EST</pubDate>
     </item>
 
+    <!-- далее список архивных эпизодов -->
+  
     <!-- разделитель эпизодов -->
 			
   	<item>
@@ -154,15 +171,13 @@
 	    <description>
         <![CDATA[<p><b>Заметки к эпизоду:</b></p><ul class="bulleted"><li><img src="https://www.techlifepodcast.com/images/techlifepodcast-ep42-skypecall.jpg" width="420" height="254"></li><li><a href="https://yandex.ru">yandex.ru</a></li><li><a href="https://toloka.yandex.ru/">Яндекс Толока</a></li><li><a href="https://www.corpus.ru/products/maks-tegmark-zhizn-3-0-chelovek-ehpoha-iskusstv-intellekta.htm">Макс Тегмарг - Жизнь 3.0</a></li></ul><p><a href="https://itunes.apple.com/podcast/tehnologii-i-zizn/id1013700516?mt=2">наш подкаст в директории подкастов Эппл</a>,<br><a href="https://overcast.fm/itunes1013700516">в Оверкасте</a>,<br> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly90ZWNobGlmZXBvZGNhc3QuY29tL3BvZGNhc3QtZmVlZC54bWw">Гугл подкастах</a>, <br><a href="https://open.spotify.com/show/03re4PmocsgPtLBtIxVK4m">Спотифае</a> и <a href="https://music.yandex.ru/album/7322142">на Яндекс Музыке</a></p>]]>
       </description>
-	    <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/768235954-techlifepodcast-episode-42-yandex.mp3" length="39415601"/>
+	    <enclosure type="audio/mpeg" url="https://www.techlifepodcast.com/Episodes/Techlife-42-Yandex.mp3" length="39415601"/>
 	    <guid>8c2fe2aa-4fd4-4b22-849e-cb68a3b69f84</guid>
 	    <itunes:duration>0:41:02</itunes:duration>
 	    <itunes:explicit>clean</itunes:explicit>
 	    <pubDate>Fri, 28 Feb 2020 00:05:00 EST</pubDate>
     </item>
    
-    <!-- далее список архивных эпизодов -->
-  
     <!-- разделитель эпизодов -->
 	
 	  <item>
